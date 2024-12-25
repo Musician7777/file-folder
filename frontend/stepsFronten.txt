@@ -1,0 +1,54 @@
+Start
+-npm create vite
+-npm <dir_name>
+-npm install
+-npm run dev (sampe project started)
+
+Folders
+-pages
+--Home
+--Userlogin
+--Usersingup
+--etc
+
+File
+-Home
+--import react
+--build the functional conponent
+--export the component
+
+Routing
+-npm i react-router-dom
+-wrap using BrowserRouter, components of main.jsx
+-wrap using Routes , all the Route with only "e" not "s"
+--Then use Route , path='/' (where to go) , element={<component/>} (what to render)
+-Link inline type of css element, to='/continue' (where to go on clicking)
+--Whey <Link> instead of <a> , prevents full page reloads
+-All the components are present in the (react-router-dom)
+
+Userlogin page
+-simple form for login
+-Two way binding *
+--create an usestate variable
+--then refer to this syntax => value={email} onChange={ (e)=>{ setEmail(e.target.value) }}
+-preventDefault() , using the submitHandler function
+
+React Context
+-create an folder named Context
+-create an file inside it name SomethingContext.jsx
+-wrap the main App conponent using the SomethingContext (import it as before)
+--then SomethingContext.jsx file is able to access its childrens 
+---pass {children} on the main conponent functional component
+----and return {children} to render the childrens that are wrapped inside the Context
+
+-createContext
+--export const userDataContext = createContext()  //to send the data everywhere
+--simply create a data or variable (which you want to use everywhere)
+--  <<userDataContext.Provider value={sampleData}> 
+        {/* used .Provider method to provide the data through all pages */}
+        {/* Pass the data as value on the Provider in this case sampleData was passed*/}
+        {/* Then use the useContext to use the data on any page (see login page console) */}
+        {children}
+    </userDataContext.Provider>>
+
+

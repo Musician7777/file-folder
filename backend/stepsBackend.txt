@@ -1,0 +1,24 @@
+Project setup
+-npm init -y
+-install the express (javascript based framework)
+-install nodemon  (helps in running the node app.js,it runs autometically when something changes in the file)
+-install dotenv and cors
+
+Boilerplate Code
+-require the express
+-make it usable by putting in the App = express()
+-use app.get to define the route
+-use the app.listen to define in which port your app is going to listen
+
+Entrypoint of the Code
+-server.js
+--use server.js file to define and use the port where the web is going to listen
+--use app.use(cors()) on app.js file to verify that web is listen on the given domain
+--use .env to define the port no. and config using (dotenv.config()) and use with (process.env.Port) port in this case
+Change in package.json file
+-main => server.js
+-then run npx nodemon 
+-the server.js is now the Entrypoint of or code 
+
+Export anything
+-use (module.exports = <what_you_want_to_export>) like app in this case
