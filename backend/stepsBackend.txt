@@ -22,3 +22,6 @@ Change in package.json file
 
 Export anything
 -use (module.exports = <what_you_want_to_export>) like app in this case
+
+Create Models
+-install mongoose
